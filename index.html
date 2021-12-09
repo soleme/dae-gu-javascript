@@ -15,18 +15,26 @@
         }
     </style>
 </head>
-<body>
+<body id="root"> 
     <div class="container">
         <h1>WEB</h1>
         <div class="row">
-                <ol class="navigation col-3">
-                    <li>html</li>
-                    <li>css</li>
-                    <li>js</li>
-                </ol>
+            <ol class="navigation col-3">
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+            </ol>
             <div class="col">                
                 <h2>Welcome</h2>
                 hello, web
+                <input type="button" value="night" onclick="
+                document.querySelector('#root').style.backgroundColor='black';
+                document.querySelector('#root').style.color='white';
+                ">
+                <input type="button" value="day" onclick="
+                document.querySelector('#root').style.backgroundColor='white';
+                document.querySelector('#root').style.color='black';
+                ">
             </div>
         </div>
     </div>

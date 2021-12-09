@@ -17,16 +17,27 @@
 </head>
 <body id="root"> 
     <div class="container">
-        <h1>WEB</h1>
+        <h1><a href="1.html">WEB</a></h1>
         <div class="row">
             <ol class="navigation col-3">
-                <li>html</li>
-                <li>css</li>
-                <li>js</li>
+                <li><a href="1.html">html</a></li>
+                <li><a href="2.html">css</a></li>
+                <li><a href="3.html">js</a></li>                
             </ol>
             <div class="col">                
                 <h2>Welcome</h2>
                 hello, web
+                <input type="button" value="modeChange" id="dayNightMode" onclick="
+                    if(document.querySelector('#dayNightMode').vaule === 'night'){
+                        document.querySelector('#root').style.backgroundColor='black';
+                        document.querySelector('#root').style.color='white';
+                        document.querySelector('#dayNightMode').vaule='day';
+                    }else{
+                        document.querySelector('#root').style.backgroundColor='white';
+                        document.querySelector('#root').style.color='black';
+                        document.querySelector('#dayNightMode').vaule='night';
+                    }
+                ">
                 <input type="button" value="night" onclick="
                 document.querySelector('#root').style.backgroundColor='black';
                 document.querySelector('#root').style.color='white';
